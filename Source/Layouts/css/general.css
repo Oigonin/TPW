@@ -31,7 +31,7 @@ body {
 /*form*/
 .multi-col-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   clear: both;
 }
@@ -39,18 +39,36 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  margin: 5px;
 }
 
 .label {
-  min-width: 170px; /*Should be changed in specific css file*/
+  width: 170px; /*Should be changed in specific css file*/
+  word-wrap: break-word;
+  margin-right: 5px;
 }
 
+/*input elements*/
+.input-area {  /*TODO need vertical scroll bars*/
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.input-text {  /*TODO need to catch 'enter' and move caret to next row*/
+  width: 200px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+
 /**-----*/
-
-
 table {
   border: 1px solid black;
   border-radius: 5px;
+  padding: 5px;
 }
 
 th {
@@ -59,13 +77,51 @@ th {
 
 td {
   word-wrap: break-word;
+  padding: 4px;
 }
 
-/*style for status*/
+tr:hover {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/*deleted row status*/
 .deleted {
   color: #676D76;
 }
 
-.del-status {
-  color: red;
+/*labels for statuses*/
+.status-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-btn-active {
+  width: 25px;
+  height: 25px;
+  background: green;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-btn-active:hover {
+  background: red;  /*TODO change V to X*/
+}
+
+.status-btn-deleted {
+  width: 25px;
+  height: 25px;
+  background: red;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-btn-deleted:hover {
+  background: green; /*TODO change X to V*/
 }

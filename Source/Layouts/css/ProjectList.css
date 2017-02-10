@@ -1,0 +1,12 @@
+.flex-containter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-attr-panel {
+  margin-left: 10px;
+}
+
+td:nth-child(2) {
+  width: 350px;
+}
