@@ -5,17 +5,71 @@ label {
   text-align:left;
   display:block;
 }
-input[type="text"] {
-  width: 800px;
+
+.nametext {
+  width: 1000px;
+}
+
+/* input's*/
+.conandcom {
+  width: 1280px;
   margin-bottom: 5px;
 }
 
 input[type="number"] {
-  width: 100px;
+  width: 150px;
   margin-bottom: 5px;
 }
 
-button {
-  margin-top: 10px;
+/* Div-часть */
+.main_div {
+  border: 1px solid black;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  width: 1400px;
+  background: #E8EAF6;
+}
+
+.name_div {
+  border: 1px solid black;
+  padding: 10px 5px 10px 5px;
+  background: white;
   margin-bottom: 10px;
+  width: 1100px;
+  float: left;
+}
+
+.id_div {
+  border: 1px solid black;
+  background: white;
+  padding: 10px 5px 5px 5px;
+  float: right;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.conandcom_div {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px 5px 5px 5px;
+  background: white;
+  width: 1380px;
+  clear: both;
+}
+
+.buttons_div {
+  padding-bottom: 10px;
+  padding-right: 9px;
+  text-align: right;
+}
+
+/* Настройка кнопок*/
+.for_buttons {
+  padding-top: 5px;
+  text-align: right;
+  width: 925px;
+  border-top: 0px;
 }
