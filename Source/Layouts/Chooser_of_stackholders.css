@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding-left: 3px;
+}
+
+th{
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.wrow-1 {
+  width: 20px;
+}
+.wrow-2 {
+  width: 230px;
+}
+
+tr:nth-child(2n) {
+  background: lavender;
+}
+
+tr:nth-child(1) {
+  background: gainsboro;
+}
