@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom attribute list</title>
+  <link href="Custom_attribute_list.css" rel="stylesheet">
+</head>
+<body>
+<div class="general">
+
+  <div class="win-header">
+    <label>Custom attribute list</label>
+  </div>
+
+  <div>
+      <div class="filter_panel">
+        <div>
+          <label>Object:</label>
+            <select name="Object_Select">
+              <option value="Selected_object_none"></option>
+              <option value="Select_People">People</option>
+              <option value="Select_Group">Group</option>
+            </select>
+          <label>Type:</label>
+          <select name="Type_select">
+            <option value="Selected_type_none"></option>
+            <option value="Select_BR">BR</option>
+            <option value="Select_SR">SR</option>
+            <option value="Select_FR">FR</option>
+          </select>
+          <label id="Search_field">Search:</label>
+          <input type="search" name="Search_field">
+          <button type="reset">Reset</button>
+        </div>
+      </div> <!-- end of filter and search panel -->
+
+      <div class="Tools_panel">
+        <div class="Buttoms_panel">
+          <button>Activate</button>
+          <button>Disable</button>
+        </div>
+        <div class="activate_attr_trigger">
+          <input type="checkbox" checked="true" id="show_deleted_project">
+          <label for="show_deleted_project">Show Disabled Attributes</label>
+        </div>
+      </div>
+
+    <div class="flex-conteiner">
+      <div>
+        <table>
+          <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Disabled</th>
+            <th>Default</th>
+            <th>Edit</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Contract is active</td>
+            <td>boolean</td>
+            <td>True</td>
+            <td>True</td>
+            <td><button>edit</button></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Company name</td>
+            <td>text</td>
+            <td>True</td>
+            <td>NULL</td>
+            <td><button>edit</button></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Telephone</td>
+            <td>text</td>
+            <td>False</td>
+            <td>NULL</td>
+            <td><button>edit</button></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Stakeholder type</td>
+            <td>text</td>
+            <td>True</td>
+            <td>NULL</td>
+            <td><button>edit</button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+     </div>
+  </div>
+</body>
+</html>
